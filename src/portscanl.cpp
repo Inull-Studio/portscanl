@@ -30,9 +30,6 @@ int main(int argc, char *argv[])
         printf("Startup failed!\n");
         return 1;
     }
-    cout << 1;
-    cout << '-';
-    cout << MAX_PORT << endl;
     start = clock();
     ThreadPool pool(10000);
     for (port = 1; port <= MAX_PORT; port++)
