@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
         return 1;
     }
     start = clock();
-    ThreadPool pool(10000);
+    ThreadPool pool(5000);
     for (port = 1; port <= MAX_PORT; port++)
     {
         pool.enqueue([port]
